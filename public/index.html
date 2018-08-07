@@ -4,9 +4,20 @@
     <meta charset="utf-8">
     <title>Chat Application</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="master.css"/>
   </head>
   <body>
-    <h1>Working!</h1>
+    <h1>Spartan Chat App</h1>
+    <div id="chatapp">
+      <div id="messagewindow">
+          <div id="output"></div>
+          <div id="typingmessage"></div>
+      </div>
+      <input id="username" type="text" name="username" placeholder="username"/>
+      <input id="message" type="text" name="message" placeholder="messages"/>
+      <button id="send">Send</button>
+    </div>
+
     <script src="/chat.js" charset="utf-8"></script>
   </body>
 </html>
